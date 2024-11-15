@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Column Layout In CSS</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0a0f17;
+            color: #fff;
+            font-family: sans-serif;
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-items: center;
+        }
+        .text {
+            width: 80%;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 40px;
+            color: red;
+            text-shadow: 0px 0px 10px red;
+        }
+        p {
+            font-size: 18px;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            line-height: 1.5;
+            column-count: 3;
+            column-gap: 50px;
+            text-align: justify;
+            column-rule: 3px solid red;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="text">
+      <h1>CSS Column Layout</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maiores
+        animi amet, cupiditate autem beatae vel distinctio dignissimos rem?
+        Suscipit id doloribus dolore molestias libero magni expedita qui eveniet
+        dolorem ut velit, dolor, sed quam fugit minima alias aspernatur
+        similique consectetur dolores excepturi? Dolor officia dignissimos
+        tenetur quis inventore id minus labore sunt, eaque impedit at minima ut
+        nam consectetur fugiat consequuntur accusantium numquam! Blanditiis,
+        molestias repellat hic iste ullam quibusdam inventore placeat non, odit
+        dolorum, repellendus fugiat provident explicabo cum quis ipsum totam?
+        Explicabo quidem, commodi fugit inventore qui eius, voluptate cupiditate
+        beatae dolore ipsa in tenetur quo minima!
+      </p>
+    </div>
+  </body>
+</html>
