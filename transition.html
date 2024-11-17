@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition In CSS</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: #0a0f17;
+            color: #fff;
+            font-family: sans-serif;
+        }
+        div {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: flex-start;
+            background-color: #0a0f17;
+            border-radius: 10px;
+            padding: 30px;
+            transition: all 0.3s linear;
+        }
+        div:hover {
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+        }
+        div h1 {
+            font-size: 40px;
+            color: #39bae6;
+        }
+        div p {
+            text-align: justify;
+            font-size: 19px;
+        }
+        div a {
+            background-color: #ec8c00;
+            color: #0a0f17;
+            text-decoration: none;
+            font-size: 19px;
+            padding: 9px 24px;
+            border-radius: 5px;
+            border: 2px solid #ec8c00;
+            transition: all 0.3s linear;
+        }
+        div a:hover {
+            background-color: transparent;
+            color: #ec8c00;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Transition</h1>
+        <p>CSS transitions allows you to change property values smoothly, over a given duration. To create a transition effect, you must specify two things: <b>(1)</b> the CSS property you want to add an effect <b>(2)</b> the duration of the effect. If the duration part is not specified, the transition will have no effect, because the default value is 0.</p>
+        <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank">Learn More</a>
+    </div>
+</body>
+</html>
