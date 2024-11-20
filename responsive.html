@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: sans-serif;
+        }
+        #main {
+            width: 35%;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 40px;
+        }
+        #text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            & h1 {
+                font-size: 38px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: #0a0f17;
+            }
+            & p {
+                font-size: 17px;
+                line-height: 1.4;
+            }
+            & a {
+                text-decoration: none;
+                font-size: 19px;
+            }
+        }
+        /* media query less then 1200px */
+        @media screen and (width <= 1200px) {
+            #main {
+                width: 45%;
+            }
+        }
+        /* media query less then 1000px */
+        @media (width <= 1000px) {
+            #main {
+                width: 55%;
+            }
+        }
+        /* media query less then 900px */
+        @media (width <= 900px) {
+            #main {
+                width: 60%;
+            }
+            #text {
+                & h1 {
+                    font-size: 30px;
+                }
+                & p {
+                    font-size: 15px;
+                }
+                & a {
+                    font-size: 17px;
+                }
+            }
+        }
+        /* media query less then 500px */
+        @media (width <= 500px) {
+            #main {
+                width: 90%;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="text">
+        <h1>Muhammad Hussain</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nihil
+          voluptatum, recusandae tempore necessitatibus, perspiciatis, sed est
+          veritatis laudantium debitis facilis? Ducimus, dolorem nam? Voluptatum
+          natus ratione numquam officia nihil vel, modi iste veniam ipsam
+          dolores sequi illum maiores molestias quasi, error distinctio officiis
+          cupiditate amet, nostrum recusandae libero nesciunt!
+        </p>
+        <a href="https://www.google.com">Learn More!</a>
+      </div>
+    </div>
+  </body>
+</html>
